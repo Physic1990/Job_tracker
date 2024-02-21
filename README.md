@@ -1,4 +1,4 @@
-# Job_tracker
+# Job Tracker
 
 ## Description:
 The "Job Tracker" web application, developed using Flask, empowers users to efficiently search for job openings across the internet based on their desired roles. This application offers functionalities for generating CVs, resumes, and autofilling job applications. Additionally, it includes features to manage job applications, providing status updates and reminders for better organization.
