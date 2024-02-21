@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Job Search{% endblock %}
+
+{% block extra_head %}
+    <!-- Additional head content specific to job search page -->
+{% endblock %}
+
+{% block content %}
+    <h2>Search for Job Openings</h2>
+    <form action="/search" method="GET">
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" placeholder="Enter job title">
+
+        <label for="industry">Industry:</label>
+        <input type="text" id="industry" name="industry" placeholder="Enter industry">
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location">
+
+        <button type="submit">Search</button>
+    </form>
+{% endblock %}
+
+{% block footer_year %}2024{% endblock %}

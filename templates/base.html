@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Job Tracker{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+    <header>
+        <h1>Job Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/add_job">Add Job</a></li>
+                <li><a href="/my_applications">My Applications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <h2>Welcome to Job Tracker!</h2>
+        <p>Here's how to get started:</p>
+        <ol>
+            <li>Click "Add Job" to log a new job or internship application.</li>
+            <li>Fill in the details: company name, position, application date, etc.</li>
+            <li>Track your progress in the "My Applications" section.</li>
+        </ol>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; {% block footer_year %}2023{% endblock %} Your Name</p>
+    </footer>
+
+    <script src="/src/script.js"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

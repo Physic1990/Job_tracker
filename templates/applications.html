@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Job Tracker - Applications{% endblock %}
+
+{% block extra_head %}
+    <!-- Additional head content specific to applications page -->
+{% endblock %}
+
+{% block content %}
+    <h2>Job Applications</h2>
+    
+    <div class="application-list">
+        <div class="application">
+            <h3>Application 1</h3>
+            <p>Status: <span class="status pending">Pending</span></p>
+            <p>Notes: Notes goes here</p>
+            <button>Edit</button>
+        </div>
+        <div class="application">
+            <h3>Application 2</h3>
+            <p>Status: <span class="status in-progress">In Progress</span></p>
+            <p>Notes: Notes goes here</p>
+            <button>Edit</button>
+        </div>
+        <div class="application">
+            <h3>Application 3</h3>
+            <p>Status: <span class="status completed">Completed</span></p>
+            <p>Notes: Notes goes here</p>
+            <button>Edit</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer_year %}{{ current_year }}{% endblock %}
