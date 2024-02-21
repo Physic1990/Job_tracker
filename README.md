@@ -7,7 +7,7 @@ The "Job Tracker" web application, developed using Flask, empowers users to effi
 ## Project Structure
 ├── js\
 │   └── script.js\
-├── static  
+├── static\
 │   └── style.css\
 ├── templates\
 │   └── applications.html\

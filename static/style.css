@@ -1,18 +1,25 @@
-
-
-CSS
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    margin: 20px;
-	color: red;
+    color: #100;
 }
 
 header {
     background-color: #f0f0f0;
     padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Increase font size */
+    color: #333; /* Adjust font color */
+}
+
+nav {
+    margin-top: 10px; /* Add space between header and nav */
 }
 
 nav ul {
@@ -25,19 +32,138 @@ nav li {
     margin-right: 20px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #555; /* Adjust font color */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hover effect */
+nav a:hover {
+    color: #777; /* Darken color on hover */
+}
+
 footer {
     background-color: #444;
     color: #fff;
     text-align: center;
-    margin: 0;
     padding: 10px;
-    position: fixed; 
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-
-    /* left: 50%;
-    transform: translateX(-50%); */
     width: 100%;
+}
+
+
+/* jobs.html */
+.job-search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.job-search-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.job-search-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* applications.html */
+.applications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.applications-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.application-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.application {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application h3 {
+    margin-top: 0;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.in-progress {
+    color: blue;
+}
+
+.status.completed {
+    color: green;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
