@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="/static/job_search_style.css">
+{% endblock %}
+
+{% block content %}
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Log In">
+    </form>
+{% endblock %}
+
+{% block footer_year %}2024{% endblock %}

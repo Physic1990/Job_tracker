@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="/static/job_search_style.css">
+{% endblock %}
+
+{% block content %}
+
+    <form action="/signup" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+        
+        <input type="submit" value="Sign Up">
+    </form>
+{% endblock %}
+
+{% block footer_year %}2024{% endblock %}
