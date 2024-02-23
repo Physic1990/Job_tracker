@@ -7,13 +7,41 @@
 {% endblock %}
 
 {% block content %}
-    <h2>Welcome to Job Tracker!</h2>
-    <p>Here's how to get started:</p>
-    <ol>
-        <li>Click "Add Job" to log a new job or internship application.</li>
-        <li>Fill in the details: company name, position, application date, etc.</li>
-        <li>Track your progress in the "My Applications" section.</li>
-    </ol>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Job Tracker!</h1>
+            <p>Efficiently search for job openings and manage your job applications.</p>
+            <a href="/add_job" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Job Search</h3>
+                <p>Search for job openings by specifying job title, industry, location, etc.</p>
+            </div>
+            <div class="feature">
+                <h3>Comprehensive Job Search</h3>
+                <p>Scour various online job portals and sources to provide a comprehensive view of available opportunities.</p>
+            </div>
+            <!-- Add other features here -->
+            <div class="feature">
+                <h3>CV/Resume Generation</h3>
+                <p>Create professional CVs and resumes directly within the application.</p>
+            </div>
+            <div class="feature">
+                <h3>Autofill Job Applications</h3>
+                <p>Simplify the process of applying for jobs by automatically populating common fields in job application forms.</p>
+            </div>
+            <div class="feature">
+                <h3>Application Tracking</h3>
+                <p>Track the status of job applications and add notes or updates regarding each application.</p>
+            </div>
+            <!-- More features here -->
+        </div>
+    </section>
 {% endblock %}
 
 {% block footer_year %}2023{% endblock %}
